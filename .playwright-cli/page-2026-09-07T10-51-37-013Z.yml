@@ -1,0 +1,107 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Pular para o conteúdo" [ref=e3] [cursor=pointer]:
+      - /url: "#conteudo"
+    - complementary [ref=e4]:
+      - link "Lume, início" [ref=e5] [cursor=pointer]:
+        - /url: "#escritorio?empresa=aurora&lote=&aba=accounts"
+        - generic [ref=e9]: lume.
+      - generic [ref=e10]:
+        - generic [ref=e11]: E
+        - generic [ref=e12]:
+          - strong [ref=e13]: Escritório exemplo
+          - text: Seu espaço de trabalho
+      - generic [ref=e14]: ESPAÇO CONTÁBIL
+      - navigation "Navegação principal" [ref=e15]:
+        - link "Visão geral" [ref=e16] [cursor=pointer]:
+          - /url: "#escritorio?empresa=aurora&lote=&aba=accounts"
+        - link "Clientes" [ref=e21] [cursor=pointer]:
+          - /url: "#clientes?empresa=aurora&lote=&aba=accounts"
+        - link "Lotes por competência" [ref=e177] [cursor=pointer]:
+          - /url: "#lotes?empresa=aurora&lote=&aba=accounts"
+        - link "Configuração do cliente" [ref=e30] [cursor=pointer]:
+          - /url: "#configuracao?empresa=aurora&lote=&aba=accounts"
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]: MAIS CLAREZA, MENOS ROTINA
+          - paragraph [ref=e40]: Você cuida das decisões.O Lume organiza o caminho.
+        - button "Conheça o protótipo" [ref=e41] [cursor=pointer]
+        - button "Reiniciar demonstração" [ref=e45] [cursor=pointer]
+        - generic [ref=e49]:
+          - generic [ref=e50]: CE
+          - generic [ref=e51]:
+            - strong [ref=e52]: Contador exemplo
+            - text: Ambiente demonstrativo
+    - generic [ref=e53]:
+      - banner [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: Espaço de trabalho
+          - strong [ref=e59]: Configuração do cliente
+        - generic [ref=e60]:
+          - generic [ref=e61]: Protótipo · dados fictícios
+          - button "Ajuda sobre a demonstração" [ref=e63] [cursor=pointer]
+      - main [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]: Aurora Serviços
+          - generic [ref=e70]: Clara · Contadora demo
+        - button "Voltar à ficha de Aurora Serviços" [ref=e178] [cursor=pointer]
+        - generic [ref=e179]:
+          - generic [ref=e180]:
+            - paragraph [ref=e181]: PREPARAÇÃO DO CLIENTE
+            - heading "Uma base para boas decisões." [level=1] [ref=e182]
+            - paragraph [ref=e183]: Aurora Serviços · plano de contas, referências e regras autorizadas.
+          - button "Ver lotes" [ref=e184] [cursor=pointer]
+        - paragraph [ref=e190]: Plano ausente. Confira um exemplo e autorize o plano abaixo. Histórico e regras são opcionais. As configurações são fictícias e ficam apenas nesta sessão.
+        - generic [ref=e191]:
+          - generic [ref=e195]:
+            - heading "Plano de contas" [level=3] [ref=e196]
+            - paragraph [ref=e197]: 0 contas ativas
+          - generic [ref=e205]:
+            - heading "Histórico de referência" [level=3] [ref=e206]
+            - paragraph [ref=e207]: Sem histórico · revisão manual
+          - generic [ref=e214]:
+            - heading "Regras autorizadas" [level=3] [ref=e215]
+            - paragraph [ref=e216]: 0 regras ativas
+        - generic [ref=e219]:
+          - button "Plano de contas" [pressed] [ref=e220] [cursor=pointer]
+          - button "Histórico" [ref=e221] [cursor=pointer]
+          - button "Regras autorizadas" [ref=e222] [cursor=pointer]
+        - generic [ref=e223]:
+          - generic [ref=e225]:
+            - heading "Prepare o primeiro plano" [level=2] [ref=e226]
+            - paragraph [ref=e227]: Conjunto inicial fictício
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - generic [ref=e230]:
+                - text: Selecionar exemplo de plano
+                - combobox "Selecionar exemplo de plano" [ref=e231]:
+                  - option "Conjunto de serviços pronto" [selected]
+                  - option "Conjunto com inconsistências"
+              - button "Abrir prévia do plano" [ref=e232] [cursor=pointer]
+            - paragraph [ref=e233]: A prévia fica guardada durante a navegação. Somente a autorização altera as contas permitidas.
+          - generic [ref=e234]:
+            - generic [ref=e235]:
+              - text: Buscar conta
+              - searchbox "Buscar conta" [ref=e236]
+            - generic [ref=e237]:
+              - text: Permissão de lançamento
+              - combobox "Permissão de lançamento" [ref=e238]:
+                - option "Todas as contas" [selected]
+                - option "Ativas e lançáveis"
+                - option "Inativas ou não lançáveis"
+          - region "Contas do plano" [ref=e239]:
+            - table [ref=e240]:
+              - rowgroup [ref=e241]:
+                - row [ref=e242]:
+                  - columnheader "Linha" [ref=e243]
+                  - columnheader "Código" [ref=e244]
+                  - columnheader "Descrição" [ref=e245]
+                  - columnheader "Ativa" [ref=e246]
+                  - columnheader "Lançável" [ref=e247]
+              - rowgroup
+          - paragraph [ref=e249]: Nenhum plano autorizado. Abra um conjunto fictício para começar.
+      - contentinfo [ref=e165]:
+        - generic [ref=e166]: lume. · Clareza para cada lançamento.
+        - generic [ref=e167]: Demonstração · Sem dados reais
+  - button "Open Next.js Dev Tools" [ref=e173] [cursor=pointer]
+  - alert [ref=e250]

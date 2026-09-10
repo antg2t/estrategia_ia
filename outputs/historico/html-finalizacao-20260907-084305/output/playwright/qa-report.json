@@ -1,0 +1,450 @@
+{
+  "errors": [],
+  "desktop": [
+    {
+      "id": "abertura",
+      "overflow": [],
+      "bodyBottom": 797,
+      "sourcesTop": 0,
+      "overlapsSources": false
+    },
+    {
+      "id": "percurso",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "trabalho",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "profundidade",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "beneficio",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "papeis",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "mercado-transicao",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 0,
+      "overlapsSources": false
+    },
+    {
+      "id": "mercado",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "bb",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "meli",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "meli-pessoas",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "nubank",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "performance",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "nubank-publico",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "ifood",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "toqan",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "comparacao",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "vivo-transicao",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 0,
+      "overlapsSources": false
+    },
+    {
+      "id": "bases",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "vivo-corporativa",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "lacunas",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "mandatos",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "interfaces",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "visao",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "derivacao",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "apostas",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "metas",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "experiencia",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "camadas",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "conhecimento",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "preparacao",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "reinvencao",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "modelo",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "trajetoria",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "assessment",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 737,
+      "overlapsSources": false
+    },
+    {
+      "id": "valor",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "revisao",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "discussao",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 743,
+      "overlapsSources": false
+    },
+    {
+      "id": "encerramento",
+      "overflow": [],
+      "bodyBottom": 717,
+      "sourcesTop": 0,
+      "overlapsSources": false
+    }
+  ],
+  "mobile": [
+    {
+      "id": "abertura",
+      "overflow": false
+    },
+    {
+      "id": "percurso",
+      "overflow": false
+    },
+    {
+      "id": "trabalho",
+      "overflow": false
+    },
+    {
+      "id": "profundidade",
+      "overflow": false
+    },
+    {
+      "id": "beneficio",
+      "overflow": false
+    },
+    {
+      "id": "papeis",
+      "overflow": false
+    },
+    {
+      "id": "mercado-transicao",
+      "overflow": false
+    },
+    {
+      "id": "mercado",
+      "overflow": false
+    },
+    {
+      "id": "bb",
+      "overflow": false
+    },
+    {
+      "id": "meli",
+      "overflow": false
+    },
+    {
+      "id": "meli-pessoas",
+      "overflow": false
+    },
+    {
+      "id": "nubank",
+      "overflow": false
+    },
+    {
+      "id": "performance",
+      "overflow": false
+    },
+    {
+      "id": "nubank-publico",
+      "overflow": false
+    },
+    {
+      "id": "ifood",
+      "overflow": false
+    },
+    {
+      "id": "toqan",
+      "overflow": false
+    },
+    {
+      "id": "comparacao",
+      "overflow": false
+    },
+    {
+      "id": "vivo-transicao",
+      "overflow": false
+    },
+    {
+      "id": "bases",
+      "overflow": false
+    },
+    {
+      "id": "vivo-corporativa",
+      "overflow": false
+    },
+    {
+      "id": "lacunas",
+      "overflow": false
+    },
+    {
+      "id": "mandatos",
+      "overflow": false
+    },
+    {
+      "id": "interfaces",
+      "overflow": false
+    },
+    {
+      "id": "visao",
+      "overflow": false
+    },
+    {
+      "id": "derivacao",
+      "overflow": false
+    },
+    {
+      "id": "apostas",
+      "overflow": false
+    },
+    {
+      "id": "metas",
+      "overflow": false
+    },
+    {
+      "id": "experiencia",
+      "overflow": false
+    },
+    {
+      "id": "camadas",
+      "overflow": false
+    },
+    {
+      "id": "conhecimento",
+      "overflow": false
+    },
+    {
+      "id": "preparacao",
+      "overflow": false
+    },
+    {
+      "id": "reinvencao",
+      "overflow": false
+    },
+    {
+      "id": "modelo",
+      "overflow": false
+    },
+    {
+      "id": "trajetoria",
+      "overflow": false
+    },
+    {
+      "id": "assessment",
+      "overflow": false
+    },
+    {
+      "id": "valor",
+      "overflow": false
+    },
+    {
+      "id": "revisao",
+      "overflow": false
+    },
+    {
+      "id": "discussao",
+      "overflow": false
+    },
+    {
+      "id": "encerramento",
+      "overflow": false
+    }
+  ],
+  "routes": {
+    "20": {
+      "count": 16,
+      "seconds": 1200
+    },
+    "120": {
+      "count": 29,
+      "seconds": 7200
+    },
+    "240": {
+      "count": 39,
+      "seconds": 13500
+    }
+  }
+}

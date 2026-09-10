@@ -1,0 +1,6 @@
+[    9010ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/../../../../Lume/node_modules/next/dist/next-devtools/shared/forward-logs-shared.js:44
+[    9316ms] [LOG] [HMR] connected @ webpack-internal:///(app-pages-browser)/../../../../Lume/node_modules/next/dist/next-devtools/shared/forward-logs-shared.js:44
+[   28972ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../../../Lume/node_modules/next/dist/next-devtools/shared/forward-logs-shared.js:44
+[   30486ms] [LOG] [Fast Refresh] done in 1514ms @ webpack-internal:///(app-pages-browser)/../../../../Lume/node_modules/next/dist/next-devtools/shared/forward-logs-shared.js:44
+[   55927ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/../../../../Lume/node_modules/next/dist/next-devtools/shared/forward-logs-shared.js:44
+[   56514ms] [LOG] [Fast Refresh] done in 586ms @ webpack-internal:///(app-pages-browser)/../../../../Lume/node_modules/next/dist/next-devtools/shared/forward-logs-shared.js:44

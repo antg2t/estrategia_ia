@@ -1,0 +1,157 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Pular para o conteúdo" [ref=e3] [cursor=pointer]:
+      - /url: "#conteudo"
+    - complementary [ref=e4]:
+      - link "Lume, início" [ref=e5] [cursor=pointer]:
+        - /url: "#escritorio?empresa=trust&lote=L001&aba=accounts"
+        - generic [ref=e9]: lume.
+      - generic [ref=e10]:
+        - generic [ref=e11]: E
+        - generic [ref=e12]:
+          - strong [ref=e13]: Escritório exemplo
+          - text: Seu espaço de trabalho
+      - generic [ref=e14]: ESPAÇO CONTÁBIL
+      - navigation "Navegação principal" [ref=e15]:
+        - link "Visão geral" [ref=e16] [cursor=pointer]:
+          - /url: "#escritorio?empresa=trust&lote=L001&aba=accounts"
+        - link "Clientes" [ref=e21] [cursor=pointer]:
+          - /url: "#clientes?empresa=trust&lote=L001&aba=accounts"
+        - link "Lotes por competência 5" [ref=e26] [cursor=pointer]:
+          - /url: "#lotes?empresa=trust&lote=L001&aba=accounts"
+          - text: Lotes por competência
+          - generic [ref=e29]: "5"
+        - link "Configuração do cliente" [ref=e30] [cursor=pointer]:
+          - /url: "#configuracao?empresa=trust&lote=L001&aba=accounts"
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]: MAIS CLAREZA, MENOS ROTINA
+          - paragraph [ref=e40]: Você cuida das decisões.O Lume organiza o caminho.
+        - button "Conheça o protótipo" [ref=e41] [cursor=pointer]
+        - button "Reiniciar demonstração" [ref=e45] [cursor=pointer]
+        - generic [ref=e49]:
+          - generic [ref=e50]: CE
+          - generic [ref=e51]:
+            - strong [ref=e52]: Contador exemplo
+            - text: Ambiente demonstrativo
+    - generic [ref=e53]:
+      - banner [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: Espaço de trabalho
+          - strong [ref=e59]: Visão geral
+        - generic [ref=e60]:
+          - generic [ref=e61]: Protótipo · dados fictícios
+          - button "Ajuda sobre a demonstração" [ref=e63] [cursor=pointer]
+      - main [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]: Todas as empresas atribuídas
+          - generic [ref=e70]: Clara · Contadora demo
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - paragraph [ref=e73]: TODAS AS EMPRESAS ATRIBUÍDAS
+            - heading "Seu escritório, em andamento." [level=1] [ref=e74]
+            - paragraph [ref=e75]: A próxima ação de cada cliente, com o contexto do período.
+          - button "Clientes" [ref=e76] [cursor=pointer]
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - text: Competência
+            - textbox "Competência" [ref=e83]: 2026-08
+          - generic [ref=e84]:
+            - text: Empresa
+            - combobox "Empresa" [ref=e85]:
+              - option "Todas as empresas" [selected]
+              - option "TRUST Ceramics"
+              - option "Aurora Serviços"
+              - option "Horizonte Studio"
+          - generic [ref=e86]:
+            - text: Responsável
+            - combobox "Responsável" [ref=e87]:
+              - option "Todos os responsáveis" [selected]
+              - option "Clara · Contadora demo"
+              - option "Ana · Contadora demo"
+          - generic [ref=e88]:
+            - text: Situação
+            - combobox "Situação" [ref=e89]:
+              - option "Todas as situações" [selected]
+              - option "Em revisão"
+              - option "Notas pendentes"
+              - option "Pronto para aprovação"
+              - option "Aguardando retorno"
+              - option "Aprovado"
+              - option "Rascunho"
+              - option "Lote não iniciado"
+          - button "Limpar filtros" [ref=e90] [cursor=pointer]
+        - generic [ref=e91]:
+          - button "Lotes em revisão 2 08/2026 · empresas filtradas" [ref=e92] [cursor=pointer]:
+            - generic [ref=e93]: Lotes em revisão
+            - generic [ref=e94]: "2"
+            - generic [ref=e95]: 08/2026 · empresas filtradas
+          - button "Notas pendentes 7 08/2026 · empresas filtradas" [ref=e96] [cursor=pointer]:
+            - generic [ref=e97]: Notas pendentes
+            - generic [ref=e98]: "7"
+            - generic [ref=e99]: 08/2026 · empresas filtradas
+          - button "Aguardando aprovação 0 08/2026 · empresas filtradas" [ref=e100] [cursor=pointer]:
+            - generic [ref=e101]: Aguardando aprovação
+            - generic [ref=e102]: "0"
+            - generic [ref=e103]: 08/2026 · empresas filtradas
+          - button "Entregas aguardando retorno 0 08/2026 · empresas filtradas" [ref=e104] [cursor=pointer]:
+            - generic [ref=e105]: Entregas aguardando retorno
+            - generic [ref=e106]: "0"
+            - generic [ref=e107]: 08/2026 · empresas filtradas
+        - generic [ref=e108]:
+          - generic [ref=e110]:
+            - heading "Próximas ações" [level=2] [ref=e111]
+            - paragraph [ref=e112]: Cada nota pendente é contada uma vez, mesmo com mais de um problema. Os cartões filtram a lista abaixo.
+          - region "Panorama das empresas" [ref=e113]:
+            - table [ref=e114]:
+              - rowgroup [ref=e115]:
+                - row [ref=e116]:
+                  - columnheader "Empresa / preparação" [ref=e117]
+                  - columnheader "Competência / lote" [ref=e118]
+                  - columnheader "Situação" [ref=e119]
+                  - columnheader "Responsável" [ref=e120]
+                  - columnheader "Próxima ação" [ref=e121]
+              - rowgroup [ref=e122]:
+                - row [ref=e123]:
+                  - cell "TRUST Ceramics Plano autorizado · pronta" [ref=e124]:
+                    - strong [ref=e125]: TRUST Ceramics
+                    - generic [ref=e126]: Plano autorizado · pronta
+                  - cell "08/2026 L001" [ref=e127]:
+                    - text: 08/2026
+                    - generic [ref=e128]: L001
+                  - cell "Em revisão 5 notas pendentes · Não gerada" [ref=e129]:
+                    - generic [ref=e130]: Em revisão
+                    - generic [ref=e131]: 5 notas pendentes · Não gerada
+                  - cell "Clara · Contadora demo" [ref=e132]
+                  - cell [ref=e133]:
+                    - button "Continuar revisão" [ref=e134] [cursor=pointer]
+                - row [ref=e137]:
+                  - cell "Aurora Serviços Plano ausente · preparação incompleta" [ref=e138]:
+                    - strong [ref=e139]: Aurora Serviços
+                    - generic [ref=e140]: Plano ausente · preparação incompleta
+                  - cell "08/2026 Sem lote" [ref=e141]:
+                    - text: 08/2026
+                    - generic [ref=e142]: Sem lote
+                  - cell "Lote não iniciado Lote não iniciado" [ref=e143]:
+                    - generic [ref=e144]: Lote não iniciado
+                    - generic [ref=e145]: Lote não iniciado
+                  - cell "Ana · Contadora demo" [ref=e146]
+                  - cell [ref=e147]:
+                    - button "Preparar empresa" [ref=e148] [cursor=pointer]
+                - row [ref=e151]:
+                  - cell "Horizonte Studio Plano autorizado · pronta" [ref=e152]:
+                    - strong [ref=e153]: Horizonte Studio
+                    - generic [ref=e154]: Plano autorizado · pronta
+                  - cell "08/2026 L002" [ref=e155]:
+                    - text: 08/2026
+                    - generic [ref=e156]: L002
+                  - cell "Em revisão 2 notas pendentes · Não gerada" [ref=e157]:
+                    - generic [ref=e158]: Em revisão
+                    - generic [ref=e159]: 2 notas pendentes · Não gerada
+                  - cell "Ana · Contadora demo" [ref=e160]
+                  - cell [ref=e161]:
+                    - button "Continuar revisão" [ref=e162] [cursor=pointer]
+      - contentinfo [ref=e165]:
+        - generic [ref=e166]: lume. · Clareza para cada lançamento.
+        - generic [ref=e167]: Demonstração · Sem dados reais
+  - button "Open Next.js Dev Tools" [ref=e173] [cursor=pointer]

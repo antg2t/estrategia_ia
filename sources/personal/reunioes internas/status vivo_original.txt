@@ -1,0 +1,403 @@
+Fiz uma varredura ampla em transcrições de reuniões, conversas do Teams e e-mails, priorizando não só definições, mas também status, decisões, riscos, divergências e posições explicitamente registradas. A busca reportou 7, 2, 27, 93 e 39 reuniões nos diferentes blocos temáticos, 1 resultado de pessoa e “vários e-mails”; as conversas do Teams não retornaram contagem numérica consolidada.
+Nota de leitura: para preservar a integridade no ambiente de trabalho, não vou inferir sentimentos, intenções ocultas ou avaliações pessoais. Quando digo que alguém “pensa”, “defende” ou “está preocupado”, isso corresponde a uma manifestação explícita em e-mail, mensagem ou transcrição.
+Síntese executiva
+Os cinco assuntos formam, na prática, uma mesma estratégia de transformação:
+Aumentar a capacidade de entrega da VP Pessoas sem depender exclusivamente da capacidade interna de TI.
+Usar parceiros como a COMP não apenas como fornecedores de software, mas como extensões de capacidade de produto e desenvolvimento.
+Manter uma rota de governança, interoperabilidade e possível internalização, evitando dependência técnica irreversível.
+Construir fundações reutilizáveis em dados, por meio do Data Mesh, e em IA, por meio do Violeta e de um Tech Product de agentes.
+Usar o Eu Vivo IA como camada corporativa de formação, experimentação, mudança de mindset e aproximação entre negócio e tecnologia.
+A convergência aparece explicitamente na narrativa registrada em Alinhamento rápido - Narrativa IA no RH para staff de 06/07: “2026 AI Native”, combinando Data Mesh, Violeta e POC COMP, seguido de “2026+ Escala operacional”, quando os aprendizados se transformariam em capacidades reutilizáveis. Flavia Almeida Cruz Paiva complementou que o principal não era simplesmente “falar da COMP”, mas mostrar como as jornadas estavam sendo transformadas com conceito base zero, envolvendo tecnologia, cultura, mapa mental, sincronização e sinergia entre produtos. [Alinhament...f de 06/07 | Teams] 
+1. Projeto COMP
+O que o projeto é
+A COMP está sendo tratada como parceira para redesenho e construção de jornadas digitais. As duas frentes mais concretas identificadas são:
+Recrutamento interno, com produto conversacional, MVP V0/V1 e algoritmo de matching.
+Offboarding, incluindo assinatura de documentos, fluxos operacionais e futura entrevista de desligamento.
+Na reunião Weekly Operacional - Comp., de 28 de julho de 2026, a COMP informou que havia concluído diagnóstico e design e estava entrando em build. No recrutamento interno, o build foi dividido entre o algoritmo de matching e a V0 do MVP. O desenvolvimento da V0 já havia começado, enquanto o algoritmo estava na etapa de definição de variáveis, premissas e regras. [Weekly Ope...al - Comp. | Meeting] 
+
+
+Status encontrado
+A posição mais recente e suficientemente detalhada que encontrei é de 20 e 21 de agosto de 2026.
+Na conversa Status da COMP, em 20 de agosto, foi registrado:
+integração com Outlook concluída;
+telas validadas;
+offboarding evoluindo conforme o cronograma;
+validação do algoritmo de matching em andamento;
+escopo de vagas ajustado para vagas dirigidas, sem publicação aberta;
+pendências de dados envolvendo salário e histórico de skills;
+risco relacionado à exatidão dos cálculos. [Status da COMP | Teams] 
+Na reunião Weekly - Análise Técnica Comp. - Arquitetura e Integração, de 21 de agosto, a mudança para produção havia sido implantada e os endpoints testados com a COMP. Foram observados períodos de lentidão e algumas instabilidades, inclusive erro 500 em determinados testes. O entendimento registrado foi que isso ainda não impedia o desenvolvimento, mas exigia monitoramento e uma resposta técnica clara sobre causa e correção. A integração com Outlook havia avançado; os estudos sobre Teams e callback deveriam começar na semana seguinte. [Weekly -...Integração | Meeting] 
+A integração com Teams continuava sendo considerada mais complexa, pois poderia envolver Workplace, Segurança e o time Global responsável pelo Microsoft 365. [Abordagem...mas etapas | Meeting], [Weekly -...Integração | Meeting] 
+Principais riscos
+Dados e algoritmo
+Na reunião de 28 de julho, parte da carga estava incompleta. Flavia Almeida Cruz Paiva afirmou que dados salariais só seriam disponibilizados após revisão dos pareceres de segurança. Antonio Garcia Moreno Junior orientou que, enquanto algumas tabelas ainda pudessem mudar, a COMP deveria consumir cargas full, sem implementar delta naquele momento. [Weekly Ope...al - Comp. | Meeting] 
+Sua posição sobre acompanhamento do algoritmo foi clara: você não defendia interferir antes de existir algo construído, porque estava sendo comprada uma solução. Porém, solicitou um checkpoint antes da primeira entrega para validar as lógicas utilizadas, problemas de dados e consistência conceitual, seguido de medição do resultado. [Weekly Ope...al - Comp. | Meeting] 
+Segurança, arquitetura e risco de fornecedor
+A documentação da COMP não seguia o padrão documental interno, embora descrevesse a solução. Os principais pontos de análise eram:
+trânsito e repouso de dados;
+segregação por cliente;
+integração entre clouds;
+acesso limitado a calendários;
+minimização de dados;
+residência de dados e logs no Brasil;
+integração com Outlook e Teams;
+capacidade de coexistir com o parque tecnológico da Vivo;
+possibilidade futura de internalização. [Abordagem...mas etapas | Meeting] 
+O parecer inicial de IA/TI não identificou uma barreira tecnológica impeditiva. Entretanto, foi registrado que dados, logs e observabilidade poderiam transitar fora do Brasil, mas não deveriam ser armazenados fora da região Brasil. A COMP declarou trabalhar com base separada por cliente e se comprometeu a tornar isso mais explícito na documentação. [Abordagem...mas etapas | Meeting] 
+Internalização futura
+Em 31 de julho, Marcelo Alves Franco registrou três caminhos:
+desenvolvimento dentro da esteira e do ambiente Vivo;
+desenvolvimento pela COMP, no ambiente dela, mas seguindo rigorosamente padrões Vivo;
+manutenção do produto externo, aceitando riscos de incorporação futura.
+Segundo ele, se a intenção for preservar a capacidade de internalizar no futuro, a resposta tecnicamente mais segura é desenvolver dentro da esteira Vivo. O modelo intermediário pode facilitar a internalização, mas não a garante. Foram citadas diferenças de arquitetura, como monólito modular versus sistemas distribuídos, serverless, microsserviços e linguagens que talvez não tenham capacidade interna de sustentação. [Cancelado:...Integração | Meeting] 
+O que você explicitamente defende
+Você aparece defendendo quatro princípios:
+comprar uma solução, evitando microgestão técnica prematura;
+validar previamente a lógica conceitual e a qualidade dos dados;
+evitar surpresas na primeira versão;
+negociar desde agora as condições de coexistência e eventual internalização, inclusive em diferentes canais, como Teams, WhatsApp e omnichannel. [Weekly Ope...al - Comp. | Meeting], [Abordagem...mas etapas | Meeting] 
+No histórico enviado por você em 1º de setembro, ficou registrado que os três cenários de arquitetura foram propostos por Luciana Almeida Da Silva, e você validou que eles representavam os caminhos centrais. Você acrescentou que a análise deveria considerar não só quem seria o orquestrador, mas também canais, dependências, riscos contratuais e possibilidade de reaproveitamento se a Vivo decidisse internalizar. [Abordagem...mas etapas | Meeting] 
+O que as outras pessoas explicitamente disseram
+Flavia Almeida Cruz Paiva: a COMP deve ser um parceiro estratégico para ampliar capacidade, com produtos da COMP e produtos Vivo coexistindo na mesma jornada. Ela também vê o chat conversacional como possível canal centralizador da VP Pessoas. [Abordagem...mas etapas | Meeting] 
+Luccas Domingues Costa: os pareceres de Segurança, Risco e Arquitetura influenciam diretamente as alternativas disponíveis. Ele também cobrou da COMP mais clareza e precisão nas submissões documentais. [Weekly Ope...al - Comp. | Meeting] 
+Paloma Pinheiro Faggi: reforçou a necessidade de monitorar a latência e separar claramente problema local do projeto de instabilidade global da camada de APIs. [Weekly -...Integração | Meeting] 
+Marcelo Alves Franco: recomenda preservar uma rota técnica de internalização e não tratar como simples “lift and shift” um produto desenvolvido fora dos padrões internos. [Cancelado:...Integração | Meeting] 
+Flavia Almeida Cruz Paiva, na narrativa de IA para o staff: a COMP deve aparecer como parte de uma transformação de jornadas com base zero, não como uma iniciativa tecnológica isolada. [Alinhament...f de 06/07 | Teams] 
+2. Estratégia de ampliar capacidade com desenvolvimento terceirizado
+Problema estrutural de origem
+A documentação mostra que o pano de fundo é capacidade interna tensionada.
+No e-mail Estratégia Portfólio Pessoas, de 28 de abril de 2026, Paloma Pinheiro Faggi registrou a necessidade de sair de um modelo reativo para um portfólio previsível, priorizado e sustentável. A proposta incluía calibrar backlog contra capacidade, decidir entrada, espera ou descarte de demandas e proteger a migração da folha como principal projeto. [RES: Estra...io Pessoas | Outlook] 
+No e-mail Estratégia Digital - Diretoria de Experiência do Colaborador, a estratégia foi descrita como evolução da experiência, ganho de eficiência e aceleração da digitalização, pedindo análise de capacity, alternativas de viabilização e parceria com TI desde o início para garantir escala, segurança, integração e sustentabilidade. [RE: Estrat...olaborador | Outlook] 
+Como a terceirização aparece na estratégia
+A terceirização não aparece como simples contratação de mão de obra. O modelo implícito é:
+o negócio define jornadas, prioridades e resultados;
+parceiros ajudam a ampliar capacidade de produto e desenvolvimento;
+TI, Segurança e Arquitetura delimitam guardrails;
+os produtos externos devem coexistir com capacidades internas;
+decisões contratuais e arquiteturais devem preservar opções futuras.
+A frase mais explícita é de Flavia Almeida Cruz Paiva: “a ideia é que a COMP seja um parceiro estratégico para ampliar capacidade”. [Abordagem...mas etapas | Meeting] 
+Tensão central
+Existe uma tensão não resolvida entre:
+velocidade e capacidade adicional, usando produto e desenvolvimento externos;
+controle, segurança e reversibilidade, mantendo condições para operar, integrar ou internalizar.
+A discussão da COMP mostra que quanto mais externa e diferente for a arquitetura do parceiro, maior pode ser a velocidade inicial, mas maior também pode ser o risco de dependência e dificuldade futura de incorporação. O modelo intermediário, com desenvolvimento externo seguindo padrões Vivo, foi apresentado como mitigação possível, mas não como garantia. [Cancelado:...Integração | Meeting] 
+Leitura sobre a posição de Paola Benetton Silva Schmidt
+Não encontrei uma declaração literal de Paola Benetton Silva Schmidt dizendo “minha estratégia é terceirizar desenvolvimento”. O que as fontes sustentam é:
+ela organizou a reunião técnica que tratou a COMP como parceira de ampliação de capacidade; [Abordagem...mas etapas | Meeting] 
+os indicadores e métricas de sucesso da COMP seriam submetidos à validação dela; [Weekly Ope...al - Comp. | Meeting] 
+temas de risco, arquitetura e alternativas de internalização deveriam ser apresentados a ela antes da decisão executiva superior; [Cancelado:...Integração | Meeting] 
+sua gestão também está pressionando por uma visão mais clara de produtos, serviços e COEs, com limpeza e racionalização do portfólio. [ENC: Playb...- Produtos | Outlook] 
+Portanto, o que está documentalmente suportado é uma estratégia de ampliar capacidade com parceiros, sob governança e racionalização do portfólio, e não uma terceirização irrestrita.
+3. Data Mesh
+O que já foi entregue
+O primeiro produto de dados, Headcount, foi lançado como piloto em 16 de junho de 2026. A comunicação descreveu dados padronizados e confiáveis, acesso via Databricks, autonomia para exploração e bases oficiais de headcount, contatos, movimentações, estrutura e salário. Também foram anunciados como próximos produtos skills, Atração e Performance. [Fw: 🚀 No...Data Mesh | Outlook] 
+Em 14 de julho, o Status Desenvolvimento DataMesh Vivo Skills MVP 1 - Julho/2026 registrou a base do Vivo Skills operacional e atualizada até julho de 2026, integrando competências, avaliações, posições, perfis de cargo, headcount e hierarquia. O agente analítico já estava descrito como pronto para responder perguntas de negócio sobre skills, cargos, gaps, sucessão, competências críticas e norteadores culturais. [RES: Statu...Julho/2026 | Outlook] 
+Naquele momento, estavam em andamento:
+inclusão da base de certificações;
+testes e validação do MVP 1;
+avaliação do início do MVP 2, focado em MR/TR e Performance. [RES: Statu...Julho/2026 | Outlook] 
+Expansão de escopo
+Além de Headcount e Skills, encontrei movimentos explícitos para:
+RV;
+Capacitação;
+Pesquisa;
+Recrutamento;
+Saúde e Bem-estar;
+Performance;
+integração com fontes como Gupy e SAP.
+Em 3 de setembro, você e Michelle Ribeiro Do Amaral Santos discutiram como linhas de potencial aceleração Capacitação, Pesquisa, RV e Recrutamento, com necessidade de reorganizar pessoas e ampliar o reporte recorrente sobre Data Mesh. [Update Tec...da Reunião | Video] 
+Sua posição explícita
+Na transcrição Update Tech _ Data-20260903_114007-Transcrição da Reunião.mp4, você disse que o Data Mesh era, entre todas as iniciativas, a que mais se destacava em potencial e que o tema já estava na atenção de Fernando Luciano Pereira e Paola Benetton Silva Schmidt. Você cobrou material e reporte recorrente, pelo menos quinzenal, mostrando o que mudou no período. [Update Tec...da Reunião | Video] 
+Ao mesmo tempo, a mesma transcrição registra sua insatisfação com a falta de avanço durante a ausência de uma pessoa-chave e a necessidade de combinar uma devolutiva coerente sobre o tema. Isso evidencia um problema de continuidade operacional e concentração de conhecimento, não apenas uma dificuldade de cronograma. [Update Tec...da Reunião | Video] 
+Há também uma posição sua favorável à exposição e adoção: ao encaminhar o lançamento de Headcount para Paola Benetton Silva Schmidt, você sugeriu que ela já solicitasse acesso. [Fw: 🚀 No...Data Mesh | Outlook] 
+O que outras pessoas registraram
+Ivan Yoshio Nishigasako apresentou o Vivo Skills como plataforma analítica unificada com IA conversacional, já pronta para perguntas de negócio. [RES: Statu...Julho/2026 | Outlook] 
+Marcelo De Lemos Martins e Lucia Aparecida Correia responderam positivamente à atualização enviada. [RES: Statu...Julho/2026 | Outlook] 
+Michelle Ribeiro Do Amaral Santos demonstrou preocupação com o volume de backlog até o fim do ano e dúvida sobre a capacidade de foco das áreas, sugerindo realocação de pessoas para acelerar os produtos prioritários. [Update Tec...da Reunião | Video] 
+Riscos e lacunas
+Dependência de pessoas-chave: a ausência de um especialista já interrompeu ou reduziu a velocidade percebida.
+Capacidade versus expansão: o portfólio cresce mais rápido que o time.
+Adoção versus construção: o Headcount está disponível, mas depende de acesso, treinamento, confiança e uso real.
+Reporte executivo: existe expectativa por evolução frequente, mas o material ainda precisa evidenciar claramente o delta entre ciclos.
+Integrações e ingestão: algumas fontes ainda dependem de decisões ou devolutivas de TI.
+4. Violeta
+O que é e qual papel deveria cumprir
+O Violeta SDK foi apresentado como conjunto corporativo de ferramentas para construção de agentes de IA. O treinamento de maio de 2026 tinha foco em desenvolvedores e deveria ser desdobrado para outras pessoas do time. [ENC: RH &...ioleta SDK | Outlook] 
+Em julho, a proposta evoluiu para um Tech Product interno, baseado em Python e Violeta SDK, com integração ao MCP corporativo. O objetivo explícito era criar uma fundação reutilizável, evitando replicação de código e estabelecendo padrões comuns de arquitetura, segurança, autenticação, versionamento, qualidade, observabilidade, ambientes e CI/CD. [Re: Solici...ntes de IA | Outlook] 
+Isso conecta diretamente o Violeta à estratégia de capacidade: em vez de cada fornecedor ou projeto produzir agentes isolados, haveria uma base comum para acelerar novas implementações com maior governança.
+Status
+Em 30 de julho, Renato Tironi Da Silva orientou que o time de Antonio Garcia Moreno Junior fosse procurado para compreender a demanda e colocá-la no roadmap. Portanto, havia aceitação para análise e entrada no roadmap, mas a fonte não confirma que o Tech Product já tivesse sido aprovado ou implantado. [Re: Solici...ntes de IA | Outlook] 
+Dificuldades práticas
+As conversas RH & IA | Violeta SDK e Ajuda Violeta VPP mostram que o time estava “patinando” na implementação inicial e pediu apoio direto para criar o primeiro agente. Depois aparecem erros de instalação, versões de pacote não encontradas, falhas 401 no repositório e problemas de autenticação. [RH & IA |...ioleta SDK | Teams], [Ajuda Violeta VPP | Teams] 
+Sua posição foi pragmática: ao identificar a dificuldade, você pediu uma sessão de 30 minutos com o time responsável para implementar o primeiro agente, em vez de continuar com tentativa e erro isolada. [RH & IA |...ioleta SDK | Teams] 
+Leitura consolidada
+O Violeta é estrategicamente coerente com a ambição de escala, mas as evidências mostram uma distância entre:
+disponibilidade conceitual do SDK;
+experiência real do desenvolvedor;
+documentação e suporte;
+configuração de repositórios, credenciais e pipelines;
+existência de uma fundação de produto realmente reutilizável.
+O Tech Product proposto é justamente a tentativa de fechar essa lacuna. [Re: Solici...ntes de IA | Outlook], [Ajuda Violeta VPP | Teams] 
+5. Eu Vivo IA
+O que aparece nas fontes
+O Eu Vivo IA aparece como uma iniciativa corporativa de formação e mobilização de lideranças, incluindo:
+Kick-Off Eu Vivo IA Liderança 2026 | Radar IA & Negócios, em 30 de abril de 2026;
+COMEÇOU! Eu Vivo IA Liderança | Radar IA & Negócios 2ª edição., em 24 de junho de 2026;
+imersões anteriores da StartSe;
+fóruns sobre aplicação prática, mensuração de resultados, governança e papel da liderança. [Kick-Off E...& Negócios | Meeting], [COMEÇOU! E...2ª edição. | Meeting], [[EU VIVO I...ão StartSe | Meeting] 
+Na conversa Eu Vivo IA Liderança | Radar IA & Negócios 2ª edição., participantes registraram que o encontro os fazia repensar o modelo de gestão e atuação entre negócio e tecnologia. Também surgiram pedidos por:
+canal consultivo entre IA e áreas de negócio;
+sessões sob demanda para avaliar processos e desafios;
+treinamentos adaptados às necessidades de cada área;
+maior divulgação dos caminhos internos de TI e Segurança;
+redução de barreiras procedimentais que impedem experimentos com Copilot e IA. [Eu Vivo IA...2ª edição. | Teams] 
+No kick-off, houve avaliações muito positivas sobre relevância e inspiração, mas também perguntas concretas sobre acesso corporativo a low-code, Copilot Studio e próximos passos da frente Business Workflow IA Sprints. [Kick-Off E...& Negócios | Teams] 
+Business Sprints e estratégia avançada
+Na narrativa para o staff, Mariana Zancan Angerame Daviddi destacou uma POC de times híbridos, agentes e humanos dentro da estratégia do Eu Vivo IA. Ela descreveu o Business Sprint avançado como uma dinâmica em que executivos Vivo e fornecedores explorariam hipóteses de negócio com ferramentas novas, homologadas ou não, dentro do LabIA, com cinco projetos por sprint. [Alinhament...f de 06/07 | Teams] 
+Isso posiciona o Eu Vivo IA não só como treinamento, mas como mecanismo de:
+experimentação;
+aproximação negócio-tecnologia;
+validação de hipóteses;
+formação de lideranças;
+transformação de práticas reais de trabalho.
+Relação com a estratégia da VP Pessoas
+Em abril, Paola Benetton Silva Schmidt enviou o e-mail Estratégia de IA na VP Pessoas, compartilhando uma pesquisa sobre uso de IA na Diretoria de Experiência do Colaborador. O objetivo declarado era apoiar um plano de disseminação de conhecimento, entender perfis e finalidades de uso e reunir sugestões das equipes. [Estratégia...VP Pessoas | Outlook] 
+Isso sugere duas camadas complementares, sem confundi-las:
+Eu Vivo IA: movimento corporativo de formação, reflexão e experimentação;
+Estratégia de IA da VP Pessoas: aplicação localizada, com diagnóstico de uso, disseminação, projetos concretos e mudança de jornadas.
+Conexão entre os cinco temas
+Arquitetura estratégica resultante
+Eu Vivo IA cria linguagem, mindset e espaços de experimentação.
+Violeta deveria fornecer a fundação técnica corporativa para construir agentes com padrões reutilizáveis.
+Data Mesh fornece dados governados e produtos analíticos para alimentar decisões e agentes.
+COMP amplia capacidade e acelera a transformação de jornadas, sobretudo em recrutamento e offboarding.
+Governança de portfólio e arquitetura decide o que é produto, o que permanece interno, o que pode ser feito por parceiro, quais padrões são obrigatórios e como manter opcionais futuras.
+Principal decisão ainda em aberto
+A questão central não é simplesmente “internalizar ou terceirizar”. É definir um modelo operacional híbrido:
+quais capacidades são estratégicas e devem permanecer sob domínio Vivo;
+quais entregas podem ser aceleradas por parceiros;
+quais componentes externos precisam cumprir padrões internos;
+quem será o orquestrador das jornadas;
+como dados e agentes serão governados;
+quais cláusulas e decisões arquiteturais preservam a reversibilidade;
+como se mede capacidade adicionada, e não apenas entrega pontual.
+Contradições e tensões que merecem registro
+COMP como solução comprada versus construção conjunta: você ressalta que está comprando uma solução, enquanto a COMP propõe proximidade semanal e coconstrução. A governança precisa separar decisão de produto, validação conceitual e gestão detalhada do desenvolvimento. [Weekly Ope...al - Comp. | Meeting] 
+Velocidade versus padrões técnicos: usar a arquitetura atual da COMP acelera, mas pode ampliar o risco de internalização futura. [Cancelado:...Integração | Meeting] 
+Data Mesh como vitrine versus fragilidade operacional: o tema tem alta visibilidade executiva, mas o avanço recente mostrou dependência de pessoas-chave e dificuldade de evidenciar evolução quinzenal. [Update Tec...da Reunião | Video] 
+Violeta como acelerador versus fricção de desenvolvimento: a plataforma é apresentada como padrão corporativo, mas a implementação inicial encontrou barreiras básicas de pacote, autenticação e suporte. [Ajuda Violeta VPP | Teams], [Re: Solici...ntes de IA | Outlook] 
+Eu Vivo IA como mobilização versus habilitação real: o engajamento é alto, mas as mensagens pedem canais consultivos, ferramentas, procedimentos claros e acesso a ambientes para converter aprendizado em valor. [Kick-Off E...& Negócios | Teams], [Eu Vivo IA...2ª edição. | Teams] 
+Expansão do portfólio versus capacidade: surgem continuamente novos produtos e jornadas, enquanto os registros já descrevem capacity tensionada e necessidade de priorização, espera ou descarte de demandas. [RES: Estra...io Pessoas | Outlook], [Update Tec...da Reunião | Video] 
+Conclusão
+A narrativa mais fiel às fontes é:
+A VP Pessoas está construindo um modelo de transformação no qual parceiros como a COMP ampliam a capacidade de produto e desenvolvimento, enquanto Data Mesh e Violeta formam as fundações internas de dados e IA. O Eu Vivo IA ajuda a criar repertório, experimentação e mudança de mindset. O desafio estratégico é transformar essas iniciativas em um modelo operacional governado, escalável e reversível, evitando tanto a limitação da capacidade interna quanto uma dependência excessiva de fornecedores.
+O ponto mais maduro é a direção estratégica. Os pontos ainda menos maduros são o modelo operacional, a separação de responsabilidades entre Vivo, TI e parceiros, a route-to-internalization, a capacidade de suporte técnico ao Violeta e uma visão executiva integrada de status, dependências e valor gerado.
+
+
+Fiz uma busca ampla em transcrições, reuniões, mensagens, e-mails e documentos internos. O retorno consolidado trouxe 25 reuniões na busca mais específica, 22 em uma busca complementar, vários e-mails e milhares de correspondências documentais, que filtrei para separar o material oficial do treinamento, o processo praticado atualmente e as propostas mais recentes de evolução.
+Síntese executiva
+O**“Jeito de Produtar”** aparece formalmente como Formação Estratégica de Produtos para Lideranças VPP, uma trilha presencial, integrada e obrigatoriamente sequencial. Ela não é apenas um treinamento conceitual: os materiais estão sendo usados para revisar o portfólio da VP Pessoas, redefinir o que é produto, estabelecer critérios de entrada, permanência, evolução e descontinuação e conectar produtos a indicadores e decisões de capacidade. [Convocação...ranças VPP | Meeting], [[Vivo _ Es...fólio.pptx | PDF], [[Vivo _ Es...Governança | PDF] 
+Ao mesmo tempo, o AS IS de entrada e desenvolvimento de demandas ainda é híbrido. Há um fluxo operacional já reconhecível, com cadastro, qualifying, backlog, priorização, iniciação, desenvolvimento, homologação, entrega e sustentação. Porém, os documentos mais recentes mostram que ele está sendo redesenhado para deixar de ser uma esteira de “recebimento e execução de pedidos” e virar um modelo de gestão de produtos e jornadas orientado a valor. [PD - Proce...Qualifying | Loop], [Fluxo de p...ding Paola | HTML], [Drill Down...ar HR Tech | Word], [GER HR Tec...Governança | PDF] 
+A maior mudança proposta pelo treinamento é esta:
+Demanda não deve nascer como solução pronta nem entrar automaticamente em desenvolvimento. Deve nascer como problema qualificado, disputar capacidade com base em valor e somente avançar quando houver outcome, dono, evidência, indicador e critérios claros de decisão.
+1. O treinamento “Jeito de Produtar”
+Nome e público
+A convocação oficial usa o nome Formação Estratégica de Produtos para Lideranças VPP. O público inclui VP, diretores, gerentes seniores, gerentes e especialistas. A comunicação caracteriza o tema como altamente estratégico e esclarece que os encontros formam uma trilha única e integrada, não aulas independentes. [Convocação...ranças VPP | Meeting], [RE: Convoc...ranças VPP | Outlook] 
+Também existe uma trilha complementar chamada Convocação | Formação Tática e Construção de Produtos para Times VPP, direcionada aos times que trabalham na construção e execução dos produtos. [Convocação...Times VPP | Meeting], [Convocação...imes VPP | Meeting] 
+Agenda e status atual
+A trilha estratégica possui cinco encontros:
+13/08/2026: Visão e Estratégia.
+19/08/2026: segundo encontro da trilha.
+24/08/2026: Estratégia de Portfólio.
+26/08/2026: Estrutura e Governança.
+17/09/2026: Indicadores para Decisões Estratégicas.
+Até 5 de setembro de 2026, os quatro primeiros encontros já estavam no passado e o quinto estava agendado para 17 de setembro de 2026, das 14h às 17h30, no WTC São Paulo Event Center. [[Vivo] [Es...égicas (1) | PDF], [Convocação...ranças VPP | Meeting], [Convocação...ranças VPP | Meeting] 
+As reuniões de 13, 19, 24 e 26 de agosto aparecem sem transcrição disponível. Portanto, o conteúdo abaixo vem dos materiais e e-mails associados, não de falas registradas durante as aulas. [Convocação...ranças VPP | Meeting], [Convocação...ranças VPP | Meeting], [Convocação...ranças VPP | Meeting], [Convocação...ranças VPP | Meeting] 
+Conteúdo central já disseminado
+Mentalidade de produto
+O material[Telefônica] Masterclass - Fundamentos e Mentalidade de Produto.pdf define Gestão de Produtos como a ponte entre:
+o que o negócio precisa;
+o que o usuário necessita;
+o que é tecnicamente possível.
+O foco não é lançar funcionalidades, mas resolver uma dor real, reduzir fricção e gerar valor mensurável. [[Telefônic...de Produto | PDF] 
+Estratégia de portfólio
+O material[Vivo _ Estratégia] Aula 3 - Estratégia de Portfólio.pptx.pdf separa o portfólio em duas linhas:
+Obrigatória: lei, acordo coletivo, compliance e auditoria. Não disputa se será feita, mas deve ser otimizada em custo e experiência.
+Discricionária: tudo o que a VPP escolhe fazer. Disputa capacidade com as demais iniciativas.
+A mensagem central é que a moeda mais restritiva não é o orçamento, mas a capacidade dos times. Para a linha discricionária, aplicam-se quatro portões: entrada, permanência, evolução e descontinuação. [[Vivo _ Es...fólio.pptx | PDF], [[Vivo _ Es...fólio.pptx | PDF], [RE: Convoc...ranças VPP | Outlook] 
+Governança e roadmap
+O material[Vivo _ Estratégia] Aula 4 - Estrutura e Governança.pdf trata o roadmap como uma carta de intenção e comunicação, não como promessa rígida ou meta de performance. Ele deve ser alterado quando riscos, incertezas e aprendizados mudarem o cenário, com comunicação do racional aos stakeholders. [[Vivo _ Es...Governança | PDF] 
+Também aparecem dois artefatos relevantes:
+Árvore de métricas, para conectar iniciativa, impacto e resultado estratégico.
+Card de apostas, para registrar problema, hipótese, riscos, benefício esperado e condições sob as quais a aposta deve avançar ou ser revista. [[Vivo _ Es...Governança | PDF] 
+Indicadores para decisões
+O material da aula de indicadores estabelece que uma meta sem valor-alvo e prazo permite que praticamente qualquer resultado seja narrado como sucesso. Também distingue percepção, indício, evidência e prova e propõe três perguntas para cada indicador:
+De onde veio o dado?
+Quem é responsável por ele?
+O dado está disponível quando a decisão precisa ser tomada?
+A lógica de decisão proposta é:
+Continuar: indicador de sucesso avança no prazo e o indicador de saúde não piora.
+Ajustar: indicadores antecedentes avançam, mas o resultado principal não responde.
+Escalar: resultado supera o esperado e o custo por unidade cai.
+Descontinuar: não há avanço no prazo ou o indicador de saúde piora.
+Um princípio forte do material é: critério escrito antes do número orienta decisão; escrito depois pode virar justificativa. [RE: Convoc...ranças VPP | Outlook] 
+Aplicação prática já em andamento
+O e-mail ENC: Playbook - Produtos, encaminhado por Paola Benetton Silva Schmidt em 3 de setembro de 2026, mostra que os times já estão revisando e classificando o portfólio. A orientação recebida foi definir, para cada item:
+qual problema resolve;
+para quem gera valor;
+qual resultado se espera;
+se há informação suficiente para classificá-lo objetivamente.
+O e-mail também registra divergência entre versões da planilha e ausência de análises complementares em diversos itens, com intenção de usar essas informações em uma agenda de refinamento em 14/09/2026. [ENC: Playb...- Produtos | Outlook] 
+Portanto, o treinamento já está migrando de conteúdo para prática, mas a classificação do portfólio ainda estava em refinamento na última evidência localizada.
+2. AS IS: como uma demanda nasce hoje
+Fluxo operacional reconhecido
+Os materiais históricos e atuais convergem para este fluxo:
+Solicitação
+Qualificação
+Backlog e priorização
+Mapeamento e protótipo
+Desenvolvimento
+Homologação
+Entrega
+Operação assistida e sustentação
+Esse fluxo aparece em Novo Roadmap de Dados 20240930.pptx e também em um e-mail enviado por você descrevendo a atuação de Tecnologia e Dados. [RE: Portal...ia e Dados | Outlook], [Novo Roadm...s 20240930 | PowerPoint], [Novo Roadm...s 20240930 | PowerPoint] 
+2.1 Cadastro da iniciativa
+O procedimento mais recente, PD - Processo de Qualifying.loop, modificado em 31 de agosto de 2026, define que a demanda deve ser registrada no canal oficial, identificado como Calculus/PeopleFlow, com:
+informações obrigatórias;
+AS IS;
+TO BE;
+requisitos e evidências;
+sponsor e stakeholders;
+resultado esperado.
+A saída dessa etapa é uma iniciativa cadastrada e enviada para análise. [PD - Proce...Qualifying | Loop] 
+Documentos anteriores também citam entrada padronizada pelo Portal/Calculus e registram que o AS IS deve mostrar o problema, o fluxo atual e, quando aplicável, desenhos, arquivos ou evidências do processo. [ENC: Alinh...eto Conexa | Outlook], [RE: Portal...ia e Dados | Outlook] 
+2.2 Triagem de maturidade
+Após o cadastro, Produto/Jornada ou o responsável pelo qualifying verifica:
+completude do checklist;
+informações ausentes;
+clareza do problema;
+participantes necessários.
+A triagem pode produzir quatro decisões:
+agendar o qualifying;
+solicitar complementações;
+direcionar para discovery preliminar;
+devolver por falta de aderência. [PD - Proce...Qualifying | Loop] 
+2.3 Qualifying
+O qualifying não é aprovação automática e não substitui iniciação, planejamento ou comitê. Ele avalia:
+clareza do problema;
+maturidade da demanda;
+riscos;
+impactos;
+possível esteira de atendimento;
+necessidade de discovery.
+Fluxo de projetos - Onboarding Paola.html descreve o qualifying como uma conversa estruturada para decidir se a demanda está pronta para avançar. [Fluxo de p...ding Paola | HTML], [Fluxo de p...ng Paola 1 | HTML] 
+Na prática histórica, uma demanda qualificada podia ficar com status**“aguardando assessment”**, permanecendo no backlog até priorização e alocação de GP e esteira. Isso aparece no e-mail RES: Planejamento Agosto/2025 - Qualificação das demandas. [RES: Plane...s demandas | Outlook], [RES: Plane...s demandas | Outlook] 
+O documento mais recente propõe transformar o qualifying em um gate com três saídas objetivas:
+Aprovar para backlog: problema claro, valor definido, sponsor identificado e capacidade viável.
+Enviar para discovery: problema relevante, mas ainda sem clareza suficiente.
+Devolver ou repactuar: demanda imatura, sem valor claro, desalinhada à estratégia ou apresentada como solução pronta sem problema validado. [Drill Down...ar HR Tech | Word] 
+3. Como a demanda é priorizada hoje
+Governança formal
+O NovaVPPessoas - Book do Novo Modelo Operativo.pptx estabelece Comitês de Priorização para:
+acompanhar projetos em andamento;
+discutir novas demandas;
+convergir sobre esteiras e fila de desenvolvimento;
+dar transparência e imparcialidade à priorização.
+Gestão Interna lidera a agenda e a discussão; CI e COEs participam das aprovações e inputs; Experiência do Colaborador e Tecnologia são consultadas conforme os impactos operacionais e sistêmicos. [NovaVPPess...Operativo | PowerPoint] 
+Os registros também mostram uma pauta fixa de HR Tech e Dados dentro do Comitê de Gestão Integrada, com priorização e status de projetos em cadência quinzenal. [Governança...Integrada | Outlook] 
+Critérios usados ou explicitamente defendidos
+Os materiais mais recentes da sua gerência consolidam como critérios:
+valor esperado;
+alinhamento estratégico;
+capacidade disponível;
+impacto na experiência do colaborador;
+eficiência;
+riscos e criticidade;
+urgência;
+dependências;
+esforço;
+sistemas e jornadas impactados;
+indicador de sucesso.
+A entrada no backlog não significa início imediato. O time pode questionar uma prioridade quando a demanda não estiver clara ou não demonstrar valor. [Apresentac...er_HR_Tech | HTML], [Manual_12_...er_HR_Tech | PDF], [Apresentac...er_HR_Tech | HTML] 
+O documento Drill Down Camadas e Governança - Pivotar HR Tech.docx torna explícito que a camada estratégica não deve priorizar por:
+pressão;
+senioridade do solicitante;
+simples ordem de chegada;
+confusão entre urgência operacional e valor estratégico.
+Ela deve decidir quais iniciativas entram, aguardam, passam por discovery, são fatiadas, aceleradas, pausadas ou redirecionadas e onde a capacidade limitada será alocada. [Drill Down...ar HR Tech | Word] 
+Método de pontuação
+Encontrei referência a matrizes como Eisenhower, GUT ou RICE em um material de elaboração, mas não encontrei evidência suficiente de que uma dessas metodologias esteja instituída atualmente como fórmula única e oficial para toda a VP Pessoas. [Resumo | Outlook] 
+A conclusão mais segura é:
+existe comitê e conjunto de critérios;
+existem roadmaps e listas de prioridade por esteira ou diretoria;
+ainda não aparece, nas fontes localizadas, uma pontuação corporativa única, obrigatória e plenamente operacionalizada;
+a formação está conduzindo o modelo para decisões baseadas em valor, capacidade, métricas e portões de ciclo de vida.
+4. Como a demanda chega ao desenvolvimento
+Após priorização, ocorre uma fase de iniciação ou aprofundamento, com:
+detalhamento de processo, sistemas, regras, responsáveis e volumetria;
+validação de protótipo;
+análise de viabilidade;
+estimativa de esforço e custo;
+definição de escopo;
+preparação de roadmap e backlog. [Fluxo de p...ding Paola | HTML], [Fluxo de p...ng Paola 1 | HTML] 
+Para a esteira de IA, o procedimento exige, antes da execução:
+registro e aprovação no canal oficial;
+escopo de negócio validado;
+MVP priorizado;
+requisitos funcionais e não funcionais;
+desenho da solução;
+pareceres de IA, arquitetura, segurança, privacidade e experiência, quando aplicáveis;
+integrações;
+estimativa de esforço, prazo e custo;
+roadmap;
+backlog priorizado;
+indicadores de sucesso;
+responsáveis definidos. [PD - Abert...esteira IA | Loop] 
+No trabalho cotidiano, o PO mantém e prioriza o backlog, detalha histórias e critérios de aceitação, esclarece dúvidas e aceita ou rejeita entregas. O PM atua sobre visão, estratégia, prioridades e conexão com os objetivos do portfólio. [Playbook -...dades VPTI | PowerPoint], [Playbook -...dades VPTI | PowerPoint] 
+5. Como as metas deveriam ser definidas
+As fontes apontam quatro níveis conectados:
+Visão → Objetivos → Hipóteses ou apostas → Iniciativas
+As iniciativas não deveriam ser metas em si. Elas são ações realizadas para testar hipóteses e entregar resultados. Os produtos e casos de uso devem ter métricas de sucesso conectadas aos objetivos estratégicos. [[Onboardin...t Thinking | Outlook], [[Onboardin...t Thinking | Outlook] 
+Para uma meta ser útil à decisão, ela precisa conter:
+indicador de sucesso;
+baseline;
+valor-alvo;
+prazo;
+fonte do dado;
+responsável pelo dado;
+disponibilidade do indicador no momento da decisão;
+indicador de saúde ou proteção;
+condição previamente definida para continuar, ajustar, escalar ou descontinuar. [RE: Convoc...ranças VPP | Outlook] 
+O modelo de OKR localizado organiza o ciclo em planejamento, execução/acompanhamento e encerramento, com planejamento tático trimestral, priorização do backlog e geração de roadmap por trimestre. [Guia Model...ado design | PowerPoint], [Treinament...arol - OKR | PowerPoint] 
+6. Diagnóstico do AS IS versus o modelo desejado
+O que já existe de verdade
+Canal formal de cadastro.
+Qualifying estruturado.
+Backlog por esteiras.
+Comitês de priorização.
+Roadmaps.
+Papéis de GP, PO, liderança, solicitante e times técnicos.
+Desenvolvimento, homologação, entrega e sustentação.
+Uso de AS IS, TO BE, one page, protótipo, análise de esforço, testes e manuais. [PD - Proce...Qualifying | Loop], [RE: Portal...ia e Dados | Outlook], [Novo Roadm...s 20240930 | PowerPoint] 
+Principais fragilidades registradas
+Demandas chegando sem problema, valor ou processo suficientemente claros.
+Qualifying consumindo esforço excessivo para compensar falhas do intake.
+Mistura entre qualificar, priorizar e detalhar solução.
+Entrada no backlog sendo confundida com compromisso de desenvolvimento.
+Priorização fragmentada por diretoria, lista ou esteira.
+Metas e indicadores definidos sem baseline, alvo, prazo ou regra de decisão.
+Predominância de lógica de projeto, com foco em prazo e entrega, em vez de produto, adoção, experiência e outcome.
+Falta de separação suficientemente clara entre demanda obrigatória e discricionária. [Apresentac...er_HR_Tech | HTML], [Drill Down...ar HR Tech | Word], [RE: Convoc...ranças VPP | Outlook], [Drill Down...ar HR Tech | Word] 
+Modelo que está emergindo
+O desenho mais recente propõe três camadas:
+Estratégica: conecta estratégia, OKRs, capacidade e portfólio; decide o que recebe foco.
+Produto/Core: qualifica problema, jornada, valor, métricas, roadmap e backlog.
+Delivery/Execução: transforma prioridades validadas em entregas incrementais.
+O papel da HR Tech deixa de ser apenas coordenar escopo e cronograma e passa a ser orquestrar valor ponta a ponta, incluindo adoção, medição pós-go-live, aprendizado e evolução contínua. [Drill Down...ar HR Tech | Word], [Drill Down...ar HR Tech | Word], [GER HR Tec...Governança | PDF] 
+Minha leitura consolidada
+O “Jeito de Produtar” não está criando um fluxo completamente novo do zero. Ele está colocando uma camada de estratégia de produto e disciplina de decisão sobre um fluxo de projetos que já existia.
+Hoje, o processo real pode ser resumido como:
+pedido → qualifying → backlog → comitê → projeto → entrega
+O modelo pretendido é:
+problema → valor/outcome → qualificação → disputa de capacidade → aposta priorizada → discovery/iniciação → backlog por valor → entrega incremental → adoção → mensuração → evolução ou descontinuação
+A lacuna atual está menos na inexistência de etapas e mais na qualidade dos gates, na objetividade da priorização, na conexão com metas e na governança após a entrega.
